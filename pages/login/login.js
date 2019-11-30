@@ -18,14 +18,14 @@ Page({
     app.globalData.sid = sid ? sid : "";
     this.imageLength = 55;
     app.reLogin = () => {
-      this.checkLogin();
+      //this.checkLogin();
     };
   },
 
   onReady() {
     this.dialog = this.selectComponent('#dp-dialog');
     this.toast = this.selectComponent('#wxc-toast');
-    this.checkLogin();
+    //this.checkLogin();
   },
   addSprite: function() {
     this.coinList = [];
