@@ -1,0 +1,108 @@
+<!--luck.wxml-->
+<view class="container">
+  <view class='luckBody'>
+    <!-- <view>
+    <text>今日运势</text>
+    </view> -->
+
+    <scroll-view class="scroll-view-luck">
+      <view class="topView" style="flex-direction:row;">
+        <view class='topLeftView'>
+          <view class='topLeftCellView topCell'>
+            <text class='topLeftTitle'>挂名</text>
+            <text class='topLeftText'>{{oneData.Name1}}</text>
+          </view>
+          <view class='topLeftCellView topCell'>
+            <text class='topLeftTitle'>名称</text>
+            <text class='topLeftText'>{{oneData.Name2}}</text>
+          </view>
+          <view class='topLeftCellView topCellOnly'>
+            <text class='topLeftTitle'>吉凶</text>
+            <text class='topLeftText'>{{oneData.luckScore}}</text>
+          </view>
+        </view>
+        <view class='guaView'>
+          <text class='guaViewTitle'>卦象图</text>
+          <view class='luckImageList' style='flex-direction:column;' wx:for-items="{{codeList}}" wx:key="key" wx:for-item="value">
+            <image src="{{value}}" class="guaImage" mode="widthFix"></image>
+          </view>
+        </view>
+      </view>
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>卦辞</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Hexagram}}</text>
+        </view>
+      </view>
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>推断</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Infer}}</text>
+        </view>
+      </view>
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>大象</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.DaXiang}}</text>
+        </view>
+      </view>
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>运势</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Fortune}}</text>
+        </view>
+      </view>
+
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>爱情</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Love}}</text>
+        </view>
+      </view>
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>疾病</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Disease}}</text>
+        </view>
+      </view>
+
+
+      <view class="bottonCellView botton-cell" style="flex-direction:row;">
+        <view class="textTitleView">
+          <text class='luckShowTitle'>失物</text>
+        </view>
+        <view class="textContentView">
+          <text class='luckShowContent'>{{oneData.Lost}}</text>
+        </view>
+      </view>
+     
+        <view class="bottonCellView botton-cell" style="flex-direction:row;">
+          <view class="textTitleView">
+            <text class='luckShowTitle'>诉讼</text>
+          </view>
+          <view class="textContentView">
+            <text class='luckShowContent'>{{oneData.litigation}}</text>
+          </view>
+        </view>
+  
+    </scroll-view>
+
+  </view>
+</view>

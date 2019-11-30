@@ -1,0 +1,5 @@
+/* pages/template/head.wxss */
+.headCoin{
+  display: inline-block;
+  position: fixed;
+}

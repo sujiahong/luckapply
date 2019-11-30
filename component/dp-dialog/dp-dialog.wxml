@@ -1,0 +1,11 @@
+<view wx:if="{{isShow}}">
+    <view class="dp-mask"></view>
+    <view class="dp-dialog">
+        <view class="dp-dialog-title">{{title}}</view>
+        <view class="dp-dialog-content">{{content}}</view>
+        <view class="dp-dialog-bottom">
+            <view class="dp-dialog-btn" catchtap="_cancelEvent" wx:if="{{!isOneBtn}}">{{cancelText}}</view>
+            <view class="dp-dialog-btn dp-dialog-ok-btn" catchtap="_okEvent">{{okText}}</view>
+        </view>
+    </view>
+</view>

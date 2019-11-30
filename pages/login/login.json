@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dp-dialog": "../../component/dp-dialog/dp-dialog",
+    "wxc-toast": "../../component/packages/@minui/wxc-toast/dist/index"
+
+  }
+}

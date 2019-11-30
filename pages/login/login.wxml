@@ -1,0 +1,31 @@
+<import src="../templates/head"/>
+
+<view class='container'>
+  <template is="head" data="{{coins}}"></template>
+  <view class="loginView">
+    <button class="loginBtn" size="default" bindtap="onBeginClick" type="default" >
+      开始
+    </button>
+    <button class="loginBtn" size="default" bindtap="onContact" type="default">
+      联系我
+    </button>
+    <button class="loginBtn" size="default" bindtap="onSign" type="default">
+      签到
+    </button>
+    <!-- <button class="loginBtn" size="default" bindtap="onAbout" type="default">
+      关于我
+    </button> -->
+  </view>
+  <dp-dialog id="dp-dialog" bind:cancelEvent="cancelEvent" bind:okEvent="okEvent"></dp-dialog>
+  <wxc-toast id="wxc-toast"></wxc-toast>
+  <canvas canvas-id="firstCanvas" class="MyCanvas" hidden="{{!showAniShow}}"></canvas>
+  <view class='mask' wx:if="{{isShowAuth}}">
+    <view class="dialog">
+      <view class="dialog-title">微信授权</view>
+      <view class="dialog-content">提示：需要您的授权</view>
+      <view class="dialog-bottom">
+        <button class="dialog-btn dialog-ok-btn" open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">点击微信授权</button>
+      </view>
+    </view>
+  </view>
+</view>

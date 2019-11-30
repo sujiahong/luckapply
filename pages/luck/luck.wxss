@@ -1,0 +1,130 @@
+.luckBody {
+  /* margin-left: 20rpx;
+  margin-right: 20rpx; *//* margin-top: 20rpx; *//* margin-bottom: 20rpx; */
+}
+
+.scroll-view-luck {
+  width: 100%;
+}
+
+.topView {
+  display: flex;
+  margin-bottom: 10rpx;
+}
+
+.topLeftCellView {
+  display: flex;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  font-size: 45rpx;
+}
+
+.topLeftView {
+  width: 60%;
+}
+
+.topLeftTitle {
+  font-weight: bold;
+  margin-right: 40rpx;
+}
+
+.topLeftText {
+}
+
+.guaView {
+  padding-top: 25rpx;
+  width: 40%;
+}
+
+.guaViewTitle {
+  font-weight: bold;
+  display: flex;
+  padding: 10rpx;
+  align-items: center;
+  justify-content: center;
+}
+
+.luckImageList {
+  display: flex;
+  align-items: center;
+}
+
+.guaImage {
+  width: 192rpx;
+  /* height: 25rpx; */
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  /* margin-left: 20rpx; */
+}
+
+.flex-wrp {
+  display: flex;
+}
+
+.bottonCellView {
+  display: flex;
+}
+
+.topCellOnly {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.topCell {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.topCell:after {
+  content: " ";
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 1px;
+  color: #d9d9d9;
+  bottom: 0;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.botton-cell {
+  padding: 10px 15px;
+  position: relative;
+}
+
+.botton-cell:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  left: 15px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.luckShowTitle {
+  font-weight: bold;
+  margin-right: 40rpx;
+  /* background-color: rgba(226, 37, 37, 0.5); */
+}
+
+
+
+.luckShowContent {
+  /* margin-left: 100rpx; */
+}
+
+.colorViewRed {
+  /* background-color: rgba(226, 37, 37, 0.5); */
+}
+
+.textTitleView {
+  /* display: flex; */
+  width: 18%;
+  /* background-color: rgba(37, 226, 185, 0.5); */
+}
+
+.textContentView {
+  /* display: flex; */
+  width: 82%;
+}

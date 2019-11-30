@@ -1,0 +1,107 @@
+@import "../templates/head.wxss";
+page {
+  background-image: url("http://qty83k.creatby.com/materials/150681/origin/7f3910005b3fef02e2e075c9867366aa_origin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.aniShow {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.MyCanvas{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.imagesize {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.charector {
+  position: absolute;
+  width: 180px;
+  height: 300px;
+  background: url(http://qty83k.creatby.com/materials/150681/origin/c75f3688a68425e6c5e09808df702550_origin.png) 0 0 no-repeat;
+  -webkit-animation-name: charector-1; /* 动画名称 */
+  -webkit-animation-iteration-count: infinite; /* 动画无限播放 */
+  -webkit-animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
+  -webkit-animation-duration: 950ms; /* 动画运行的时间 */
+}
+
+@-webkit-keyframes charector-1 {
+  0% {
+    background-position: 0 0;
+  }
+
+  14.3% {
+    background-position: -180px 0;
+  }
+
+  28.6% {
+    background-position: -360px 0;
+  }
+
+  42.9% {
+    background-position: -540px 0;
+  }
+
+  57.2% {
+    background-position: -720px 0;
+  }
+
+  71.5% {
+    background-position: -900px 0;
+  }
+
+  85.8% {
+    background-position: -1080px 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.loginView {
+  margin-top: auto;
+  margin-bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  display: inline-block;
+  height: 200px;
+  /* background-color: rgba(226, 37, 37, 0.5); */
+}
+
+.loginBtn {
+  /* left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px; */
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 2px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 10rpx;
+  margin-bottom: 10px;
+}

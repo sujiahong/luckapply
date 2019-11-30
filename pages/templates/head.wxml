@@ -1,0 +1,6 @@
+<!--pages/template/head.wxml-->
+<template name="head">
+  <view>
+    <text class='headCoin'>金币：{{coins}}</text>
+  </view>
+</template>

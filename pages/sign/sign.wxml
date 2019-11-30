@@ -1,0 +1,51 @@
+<import src="../templates/head"/>
+<template is="head" data="{{coins}}"></template>
+<view class="calendar">
+  <view class='bcfff'>
+    <view class="weekName">
+      <view class="monday">一</view>
+      <view class="tuesday">二</view>
+      <view class="wednesday">三</view>
+      <view class="thursday">四</view>
+      <view class="friday">五</view>
+      <view class="saturday">六</view>
+      <view class="sunday">日</view>
+    </view>
+    <view class="week">
+
+      <!--填补空格-->
+      <view wx:for="{{nbsp}}" wx:key="key">\n</view>
+
+      <!--循环日期-->
+      <!-- 当天以前 -->
+      <view wx:for="{{date-1}}" wx:key="key" style="color:gainsboro;">
+        <text wx:if="{{item+1==calendarSignData[item+1]}}" style="color: #2ccecb;">{{item+1}}</text>
+        <text wx:else="">{{item+1}}</text>
+      </view>
+      <!-- 当天 -->
+      <view style="">
+        <text wx:if="{{is_qd}}" style="color: #2ccecb;">{{date}}</text>
+        <text wx:else="" style="">{{date}}</text>
+      </view>
+      <!-- 以后 -->
+      <view wx:for="{{monthDaySize-date}}" wx:key="key">{{item+date+1}}</view>
+    </view>
+  </view>
+  <view class="calendarSign">
+    <!-- <image bindtap="calendarSign" class='btnimg' src='https://jpadmin.99dudesign.com/public/img/source/btn_icon_wodekaoqin1.png'></image> -->
+    <button bindtap="calendarSign" class='btnSign'>签到</button>
+    <!-- <text bindtap="calendarSign" class='btnimg'>签到</text> -->
+  </view>
+</view>
+<dp-dialog id="dp-dialog" bind:cancelEvent="cancelEvent" bind:okEvent="okEvent"></dp-dialog>
+<!-- 签到成功 -->
+<view class='mask' wx:if="{{isShowShare}}">
+  <view class="dialog">
+    <view class="dialog-title">签到成功，获得{{integral}}金币</view>
+    <view class="dialog-content">提示：金币可以换取各种小礼品</view>
+    <view class="dialog-bottom">
+      <button class="dialog-btn" bindtap="onNotShare">直接领取</button>
+      <button class="dialog-btn dialog-ok-btn" open-type = 'share'>转发分享</button>
+    </view>
+  </view>
+</view>

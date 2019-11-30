@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "dp-dialog": "../../component/dp-dialog/dp-dialog"
+  }
+}
