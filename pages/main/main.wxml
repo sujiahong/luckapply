@@ -1,0 +1,6 @@
+<!--pages/main/main.wxml-->
+<import src="../templates/tail"/>
+
+<text>pages/main/main.wxml</text>
+
+<template is="tail" data="{{coins}}"></template>

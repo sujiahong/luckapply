@@ -1,0 +1,7 @@
+<template name="tail">
+  <view>
+    <text class="tailcoin">金币：{{coins}}</text>
+    <button class = "tail_button" id="exchange" bindtap="onExchange">rthh</button>
+    <label for="exchange"><text class="label_text">兑换</text></label>
+  </view>
+</template>

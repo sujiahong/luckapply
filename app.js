@@ -4,6 +4,7 @@ App({
     console.log(...msg);
   },
   onLaunch: function() {
+    console.log("小程序app launched!!!")
     let self = this;
     httpRequest.setApp(this);
     wx.getSystemInfo({
@@ -17,6 +18,22 @@ App({
       }
     })
   },
+  onShow: function(opts){
+    console.log("2222222222", opts)
+  },
+  onHide: function(){
+    console.log("3333333333")
+  },
+  onError: function(msg){
+    console.error("err: =", msg)
+  },
+  onPageNotFound: function(res){
+    console.log("界面不存在，将直接去主界面")
+    wx.redirectTo({
+      url: 'pages/main/main',
+    });
+  },
+
   globalData: {
     MiniId: 1,
     userInfo: null,

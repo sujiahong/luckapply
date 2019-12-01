@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/main/main",
     "pages/login/login",
     "pages/luck/luck",
     "pages/sign/sign"
@@ -11,5 +12,6 @@
     "navigationBarTitleText": "今日运势",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "debug": true
 }
