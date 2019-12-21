@@ -1,6 +1,11 @@
 <!--pages/main/main.wxml-->
 <import src="../templates/tail"/>
 
-<text>pages/main/main.wxml</text>
+<text class="main_text_1">等级：{{level}}</text>
+
+<cover-image class="main_img_1" src="../../resources/images/coin0.png" bindload="onImgLoad" binderror="onImgError"></cover-image>
+
+<button class="main_button_1" bindtap="onLuck">每日一签</button>
+<text class="main_text_2">求签静思，心诚则灵</text>
 
 <template is="tail" data="{{coins}}"></template>

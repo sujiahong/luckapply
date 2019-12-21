@@ -1,2 +1,20 @@
 /* pages/main/main.wxss */
-@import "../templates/tail.wxss"
+@import "../templates/tail.wxss";
+
+page{
+  height: 100%;
+  width: 100%;
+}
+
+.main_button_1 {
+  width: 100px;
+  height: 45px;
+}
+
+.main_text_2 {
+  display: flex;
+  text-align: "center";
+  align-items: "center";
+  justify-content: center;
+  font-size: 12px;
+}

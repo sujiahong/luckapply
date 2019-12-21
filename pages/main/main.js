@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    level:30,
+    coins: 1000
   },
 
   /**
@@ -67,5 +68,14 @@ Page({
 
   onExchange: function(){
     console.log("onExchange!!!")
+  },
+  onImgLoad: function(){
+    console.log("图片加载成功！！！");
+  },
+  onImgError: function(err){
+    console.log("图片加载失败 ", err);
+  },
+  onLuck: function(){
+    console.log("求签！！");
   }
 })
