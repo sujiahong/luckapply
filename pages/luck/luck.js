@@ -9,7 +9,8 @@ Page({
    */
   data: {
     oneData: null,
-    codeList: []
+    codeList: [],
+    coins: 10000
   },
 
   /**

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     level:30,
-    coins: 1000
+    coins: 1000000
   },
 
   /**
@@ -77,5 +77,8 @@ Page({
   },
   onLuck: function(){
     console.log("求签！！");
+    wx.navigateTo({
+      url: '/pages/luck/luck',
+    });
   }
 })

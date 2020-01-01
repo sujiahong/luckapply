@@ -1,108 +1,41 @@
 <!--luck.wxml-->
-<view class="container">
-  <view class='luckBody'>
-    <!-- <view>
-    <text>今日运势</text>
-    </view> -->
+<import src="../templates/tail"/>
 
-    <scroll-view class="scroll-view-luck">
-      <view class="topView" style="flex-direction:row;">
-        <view class='topLeftView'>
-          <view class='topLeftCellView topCell'>
-            <text class='topLeftTitle'>挂名</text>
-            <text class='topLeftText'>{{oneData.Name1}}</text>
-          </view>
-          <view class='topLeftCellView topCell'>
-            <text class='topLeftTitle'>名称</text>
-            <text class='topLeftText'>{{oneData.Name2}}</text>
-          </view>
-          <view class='topLeftCellView topCellOnly'>
-            <text class='topLeftTitle'>吉凶</text>
-            <text class='topLeftText'>{{oneData.luckScore}}</text>
-          </view>
-        </view>
-        <view class='guaView'>
-          <text class='guaViewTitle'>卦象图</text>
-          <view class='luckImageList' style='flex-direction:column;' wx:for-items="{{codeList}}" wx:key="key" wx:for-item="value">
-            <image src="{{value}}" class="guaImage" mode="widthFix"></image>
-          </view>
-        </view>
-      </view>
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>卦辞</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Hexagram}}</text>
-        </view>
-      </view>
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>推断</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Infer}}</text>
-        </view>
-      </view>
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>大象</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.DaXiang}}</text>
-        </view>
-      </view>
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>运势</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Fortune}}</text>
-        </view>
-      </view>
-
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>爱情</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Love}}</text>
-        </view>
-      </view>
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>疾病</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Disease}}</text>
-        </view>
-      </view>
-
-
-      <view class="bottonCellView botton-cell" style="flex-direction:row;">
-        <view class="textTitleView">
-          <text class='luckShowTitle'>失物</text>
-        </view>
-        <view class="textContentView">
-          <text class='luckShowContent'>{{oneData.Lost}}</text>
-        </view>
-      </view>
-     
-        <view class="bottonCellView botton-cell" style="flex-direction:row;">
-          <view class="textTitleView">
-            <text class='luckShowTitle'>诉讼</text>
-          </view>
-          <view class="textContentView">
-            <text class='luckShowContent'>{{oneData.litigation}}</text>
-          </view>
-        </view>
-  
-    </scroll-view>
-
+<view class="top_view" style="flex-direction:row;">
+  <view class='topLeftView'>
+    <text id="top_left_view_text_1" class="top_left_view_text">2019年 12月26日</text>
+    <text class="top_left_view_text">星期三</text>
+    <text class="top_left_view_text">乙亥年腊月初三</text>
   </view>
+  <view class='guaView'>
+    <text class='guaViewTitle'>今日卦象</text>
+    <view class='luckImageList' style='flex-direction:column;' wx:for-items="{{codeList}}" wx:key="key" wx:for-item="value">
+      <image src="{{value}}" class="guaImage" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+<view id="mid_view">
+  <text id="mid_view_text_1" class="mid_view_text">标题，，标题{{oneData.title}}</text>
+  <text class="mid_view_text">诗文 : {{oneData.centent}}</text>
+  <text class="mid_view_text">卦辞 : {{oneData.Hexagram}}</text>
+  <text class="mid_view_text">推断 : {{oneData.Infer}}</text>
+  <text class="mid_view_text">大象 : {{oneData.DaXiang}}</text>
+</view>
+
+<view id="down_view">
+  <text class="down_view_text">运势 : 查看{{oneData.Fortune}}</text>
+  <text class="down_view_text">爱情 : 查看{{oneData.Love}}</text>
+  <text class="down_view_text">疾病 : 查看{{oneData.Disease}}</text>
+  <text class="down_view_text">失物 : 查看{{oneData.Lost}}</text>
+  <text class="down_view_text">诉讼 : 查看{{oneData.litigation}}</text>
+</view>
+<view id="button_view">
+  <button class="view_btn">保存图片</button>
+  <button class="view_btn">分享得金币</button>
+  <text id="button_text_1">金币可以兑换实物</text>
+</view>
+<view id="tail_view">
+    <text id="tail_coin" class="tail_item">金币：{{coins}}</text>
+    <navigator id="tail_link" class="tail_item" url="">兑换</navigator>
 </view>

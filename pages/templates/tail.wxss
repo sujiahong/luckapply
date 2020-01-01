@@ -1,39 +1,33 @@
 
 
-.tail_button {
-  size:"mini";
-  width:100px;
-  height:50px;
-  margin-top:5px;
-  margin-bottom:5px;
-  /* position:fixed; */
-  flex-direction:row;
-}
-
 .tail_view_1 {
   width: 100%;
+  height: 40px;
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  text-align: "center";
+  flex-direction: row;
   align-items: "center";
-  justify-content: center;
-  border-color: red;
+  justify-content: space-around;
+  /* background-color: red; */
+  position: fixed;
+  bottom: 0;
 }
 
 .tail_item{
   box-sizing: border-box;
-  flex: 0 0 40%;
-  margin: 5px 5px;
-  height: 50px;
+  flex: 10 10 10%;
+  height: 20px;
 }
 
 #tail_coin {
   font-size: 12px;
+  background-color: white;
+  margin: 0px 60px;
 }
 
 #tail_link {
   text-decoration-line:underline;
+  background-color: white;
   color:#00ff00;
   font-size: 12px;
+  margin: 0px 10px;
 }

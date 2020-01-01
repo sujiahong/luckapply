@@ -1,52 +1,47 @@
-.luckBody {
-  /* margin-left: 20rpx;
-  margin-right: 20rpx; *//* margin-top: 20rpx; *//* margin-bottom: 20rpx; */
-}
 
-.scroll-view-luck {
+page{
+  height: 100%;
   width: 100%;
 }
 
-.topView {
+.top_view {
   display: flex;
-  margin-bottom: 10rpx;
-}
-
-.topLeftCellView {
-  display: flex;
-  margin-top: 5rpx;
-  margin-bottom: 5rpx;
-  font-size: 45rpx;
+  /* margin-bottom: 10rpx; */
 }
 
 .topLeftView {
-  width: 60%;
+  width: 50%;
+  height: 120px;
+  border-left: 1rpx solid black;
+  border-right: 1rpx solid black;
 }
 
-.topLeftTitle {
-  font-weight: bold;
-  margin-right: 40rpx;
+.top_left_view_text{
+  display: block;
+  font-size: 28rpx;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.topLeftText {
+#top_left_view_text_1{
+  border: 1rpx solid black;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
 }
 
 .guaView {
-  padding-top: 25rpx;
-  width: 40%;
+  width: 50%;
+  height: 120px;
 }
 
 .guaViewTitle {
-  font-weight: bold;
+  /* font-weight: bold; */
   display: flex;
   padding: 10rpx;
   align-items: center;
   justify-content: center;
-}
-
-.luckImageList {
-  display: flex;
-  align-items: center;
+  font-size: 12px;
 }
 
 .guaImage {
@@ -57,11 +52,98 @@
   /* margin-left: 20rpx; */
 }
 
-.flex-wrp {
+.luckImageList {
   display: flex;
+  align-items: center;
 }
 
-.bottonCellView {
+#mid_view{
+  border: 1rpx solid black;
+  width: 100%;
+  height: 136px;
+}
+
+.mid_view_text{
+  display: block;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+#mid_view_text_1{
+  text-align: center;
+  text-decoration-line:underline;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+#down_view{
+  /* border: 1rpx solid black; */
+  width: 100%;
+  height: 136px;
+}
+
+.down_view_text{
+  display: block;
+  font-size: 12px;
+  /* padding-top: 3px;
+  padding-bottom: 3px; */
+  line-height: 20px;
+  padding-left: 5px;
+}
+
+#button_view{
+  border: 1rpx solid black;
+  width: 100%;
+  height: 50px;
+}
+
+.view_btn{
+  display: inline-block;
+  border: 1rpx solid black;
+  margin-left: 11%;
+  font-size: 15px;
+  height: 35px;
+}
+
+#button_text_1{
+  display: block;
+  font-size: 12px;
+}
+
+#tail_view{
+  /* border: 1rpx solid black; */
+  width: 100%;
+  height: 36px;
+  position: fixed;
+  bottom: 1px;
+}
+
+.tail_item{
+  display: inline;
+}
+
+#tail_coin {
+  font-size: 12px;
+  background-color: white;
+  margin: 0px 60px;
+}
+
+#tail_link {
+  text-decoration-line:underline;
+  background-color: white;
+  color:#00ff00;
+  font-size: 12px;
+  margin: 0px 10px;
+}
+
+
+/* .flex-wrp {
+  display: flex;
+} */
+
+/* .bottonCellView {
   display: flex;
 }
 
@@ -100,31 +182,4 @@
   left: 15px;
   border-top: 1rpx solid #d9d9d9;
   color: #d9d9d9;
-}
-
-.luckShowTitle {
-  font-weight: bold;
-  margin-right: 40rpx;
-  /* background-color: rgba(226, 37, 37, 0.5); */
-}
-
-
-
-.luckShowContent {
-  /* margin-left: 100rpx; */
-}
-
-.colorViewRed {
-  /* background-color: rgba(226, 37, 37, 0.5); */
-}
-
-.textTitleView {
-  /* display: flex; */
-  width: 18%;
-  /* background-color: rgba(37, 226, 185, 0.5); */
-}
-
-.textContentView {
-  /* display: flex; */
-  width: 82%;
-}
+} */

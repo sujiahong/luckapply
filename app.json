@@ -3,8 +3,7 @@
     "pages/main/main",
     "pages/login/login",
     "pages/luck/luck",
-    "pages/sign/sign",
-    "pages/exchange"
+    "pages/sign/sign"
   ],
   "window": {
     "backgroundTextStyle": "light",

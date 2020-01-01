@@ -6,6 +6,18 @@ page{
   width: 100%;
 }
 
+.main_text_1{
+  border: 1rpx solid black;
+  padding: 10px 10px;
+}
+
+.main_img_1 {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  padding: 10px 10px;
+}
+
 .main_button_1 {
   width: 100px;
   height: 45px;
